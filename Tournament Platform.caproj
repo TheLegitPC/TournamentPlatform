@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Tournament Platform</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>12u3rr3hc0t6t</unique-id>
+    <saved-with-version>16300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="TournamentTitle" sid="9135316324540384">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable comment="name of the tournament" name="tournamentname" sid="9102047549183176" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Team1" sid="313220102328655">
+            <plugin id="Button" />
+            <instance-variables>
+                <instance-variable comment="name of team assocciated to button" name="teamname" sid="3388459031666944" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Config" sid="2311604881929707">
+            <plugin id="Button" />
+            <instance-variables>
+                <instance-variable comment="password to config" name="password" sid="8338367244047427" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="PasswordEntry" sid="8026928097058167">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="nametournament" sid="9467127691963531">
+            <plugin id="TextBox" />
+            <instance-variables>
+                <instance-variable comment="name of tournament" name="tournamenttitle" sid="6244619706607928" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="membersonteam" sid="604518986850341">
+            <plugin id="TextBox" />
+            <instance-variables>
+                <instance-variable comment="number of teams in tournament" name="numberofteams" sid="5193854979550625" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="teamsoftext" sid="7188155030712415">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="numberofteams" sid="3542209496690303">
+            <plugin id="TextBox" />
+            <instance-variables>
+                <instance-variable comment="number of players on team" name="playersonteam" sid="4834078392904917" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="editingteamname" sid="961391369054472">
+            <plugin id="TextBox" />
+            <instance-variables>
+                <instance-variable comment="name of the team working on" name="nameofcurrenteditedteam" sid="4273816183212531" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Back" sid="5694105986076112">
+            <plugin id="Button" />
+            <instance-variables>
+                <instance-variable name="teams" sid="5841916315203841" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="editmembername" sid="8244955087121164">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="submitpass" sid="8009847774188029">
+            <plugin id="Button" />
+            <instance-variables>
+                <instance-variable comment="passwordtoconfiguretournament" name="configpassword" sid="9500235940084153" type="string" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Next" sid="1312259310141468">
+            <plugin id="Button" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>HomeScreen.xml</layout>
+        <layout>TeamsScreen.xml</layout>
+        <layout>BattleScreen.xml</layout>
+        <layout>Config Screen.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>View ES.xml</event-sheet>
+        <event-sheet>Config ES.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder expanded="1" />
+    <music-folder expanded="1" />
+    <files-folder expanded="1">
+        <file-folder expanded="0" name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

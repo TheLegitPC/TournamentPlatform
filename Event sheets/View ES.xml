@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>View ES</name>
+    <events>
+        <include>Config ES</include>
+        <variable comment="name of tournament" constant="0" name="tournamentname" sid="1790723043479946" static="0" type="text"></variable>
+        <variable comment="teams of how many players" constant="0" name="teamsof" sid="9296514942972921" static="0" type="number">0</variable>
+        <variable comment="how many teams playing" constant="0" name="numberofteams" sid="2006939098912037" static="0" type="number">0</variable>
+        <event-block sid="7308055097136677">
+            <conditions>
+                <condition id="-18" name="On created" sid="3295995814030831" type="Team1" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="900556899227837">
+            <conditions>
+                <condition id="0" name="On clicked" sid="3809230182447744" type="Config" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8665980151141598" type="System">
+                    <param id="0" name="Layout">Config Screen</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3956289644358049">
+            <conditions>
+                <condition id="0" name="On clicked" sid="6159151111421835" type="submitpass" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set visible" sid="5701391462350037" type="nametournament">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="3" name="Set visible" sid="791289794985557" type="editingteamname">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="3" name="Set visible" sid="4408515686189637" type="editmembername">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6553880833588366" type="teamsoftext">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="3" name="Set visible" sid="9605914137200487" type="numberofteams">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="3" name="Set visible" sid="2224015285838303" type="membersonteam">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="9955682247699202" type="Next">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="2" name="Set visible" sid="1990981184621167" type="Back">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8527214942481898">
+            <conditions>
+                <condition id="0" name="Compare text" sid="8519338570242276" type="numberofteams">
+                    <param id="0" name="Text">&quot;4&quot;</param>
+                    <param id="1" name="Case">0</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <comment></comment>
+    </events>
+</c2eventsheet>
