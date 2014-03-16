@@ -11,7 +11,11 @@
             <conditions>
                 <condition id="-18" name="On created" sid="3295995814030831" type="Team1" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="-2" name="Go to layout" sid="7313214699782399" type="System">
+                    <param id="0" name="Layout">TeamsScreen</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="900556899227837">
             <conditions>

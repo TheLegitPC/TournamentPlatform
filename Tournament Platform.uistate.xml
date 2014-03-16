@@ -13,9 +13,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout>HomeScreen</layout>
         <layout>TeamsScreen</layout>
         <layout>BattleScreen</layout>
-        <layout active="1">Config Screen</layout>
-        <event-sheet>View ES</event-sheet>
-        <event-sheet>Config ES</event-sheet>
+        <layout>Config Screen</layout>
+        <event-sheet active="1">View ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
